@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./app/assets/js/modules/_banner.js":
+/*!******************************************!*\
+  !*** ./app/assets/js/modules/_banner.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Banner)\n/* harmony export */ });\nfunction Banner() {\n  $('.slick').slick({\n    slidesToShow: 1,\n    dots: true,\n    autoplay: true,\n    autoplaySpeed: 2000\n  });\n}\n\n//# sourceURL=webpack://frontend-boilerplate/./app/assets/js/modules/_banner.js?");
+
+/***/ }),
+
 /***/ "./app/assets/js/modules/_sample.js":
 /*!******************************************!*\
   !*** ./app/assets/js/modules/_sample.js ***!
@@ -20,13 +30,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./app/assets/js/modules/_scroll.js":
+/*!******************************************!*\
+  !*** ./app/assets/js/modules/_scroll.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Scroll)\n/* harmony export */ });\nfunction Scroll() {\n  $(window).on(\"scroll\", function () {\n    if ($(window).scrollTop() > 400) {\n      $(\".header\").addClass(\"active\");\n    } else {\n      $(\".header\").removeClass(\"active\");\n    }\n  });\n}\n\n//# sourceURL=webpack://frontend-boilerplate/./app/assets/js/modules/_scroll.js?");
+
+/***/ }),
+
 /***/ "./app/assets/js/scripts.js":
 /*!**********************************!*\
   !*** ./app/assets/js/scripts.js ***!
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_sample__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/_sample */ \"./app/assets/js/modules/_sample.js\");\n\n$(document).ready(function () {\n  var sample = new _modules_sample__WEBPACK_IMPORTED_MODULE_0__.default();\n});\n\n//# sourceURL=webpack://frontend-boilerplate/./app/assets/js/scripts.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_sample__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/_sample */ \"./app/assets/js/modules/_sample.js\");\n/* harmony import */ var _modules_banner__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/_banner */ \"./app/assets/js/modules/_banner.js\");\n/* harmony import */ var _modules_scroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/_scroll */ \"./app/assets/js/modules/_scroll.js\");\n\n$(document).ready(function () {\n  var sample = new _modules_sample__WEBPACK_IMPORTED_MODULE_0__.default();\n});\n\n\n$(document).ready(function () {\n  (0,_modules_banner__WEBPACK_IMPORTED_MODULE_1__.default)();\n  (0,_modules_scroll__WEBPACK_IMPORTED_MODULE_2__.default)();\n});\n\n//# sourceURL=webpack://frontend-boilerplate/./app/assets/js/scripts.js?");
 
 /***/ })
 

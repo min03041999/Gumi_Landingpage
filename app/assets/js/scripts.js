@@ -4,6 +4,8 @@ $(document).ready(() => {
 });
 
 import Banner from "./modules/_banner";
+import Scroll from "./modules/_scroll";
 $(document).ready(() => {
-  let banner = new Banner();
+  Banner();
+  Scroll();
 })

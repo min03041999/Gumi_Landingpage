@@ -1,6 +1,9 @@
-$('.slick').slick({
-  slidesToShow: 1,
-  dots: true,
-  autoplay: true,
-  autoplaySpeed: 2000,
-});
+export default function Banner() {
+  $('.slick').slick({
+    slidesToShow: 1,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+}
+
