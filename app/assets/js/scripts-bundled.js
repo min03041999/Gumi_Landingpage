@@ -40,13 +40,53 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./app/assets/js/modules/_sidebar.js":
+/*!*******************************************!*\
+  !*** ./app/assets/js/modules/_sidebar.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Sildebar)\n/* harmony export */ });\nfunction Sildebar() {\n  var open = document.querySelector('.open');\n  var navbarSlide = document.querySelector('.sidebar');\n  var close = document.querySelector('.closes');\n  open.addEventListener('click', function () {\n    navbarSlide.classList.add('active');\n    open.classList.remove('active');\n    close.classList.add('active');\n  });\n  close.addEventListener('click', function () {\n    navbarSlide.classList.remove('active');\n    open.classList.add('active');\n    close.classList.remove('active');\n  });\n}\n\n//# sourceURL=webpack://frontend-boilerplate/./app/assets/js/modules/_sidebar.js?");
+
+/***/ }),
+
+/***/ "./app/assets/js/modules/_slider-features.js":
+/*!***************************************************!*\
+  !*** ./app/assets/js/modules/_slider-features.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ SilderFeatures)\n/* harmony export */ });\nfunction SilderFeatures() {\n  $('.features__slick').slick({\n    slidesToShow: 1,\n    slidesToScroll: 1,\n    dots: true,\n    autoplay: true,\n    autoplaySpeed: 2000,\n    responsive: [{\n      breakpoint: 1024,\n      settings: {\n        slidesToShow: 1,\n        slidesToScroll: 1,\n        infinite: true,\n        dots: true\n      }\n    }, {\n      breakpoint: 767,\n      settings: {\n        slidesToShow: 1,\n        slidesToScroll: 1\n      }\n    }, {\n      breakpoint: 480,\n      settings: {\n        slidesToShow: 1,\n        slidesToScroll: 1\n      }\n    }]\n  });\n}\n\n//# sourceURL=webpack://frontend-boilerplate/./app/assets/js/modules/_slider-features.js?");
+
+/***/ }),
+
+/***/ "./app/assets/js/modules/_slider-meet.js":
+/*!***********************************************!*\
+  !*** ./app/assets/js/modules/_slider-meet.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ SilderMeet)\n/* harmony export */ });\nfunction SilderMeet() {\n  $('.meet__slick').slick({\n    slidesToShow: 4,\n    slidesToScroll: 4,\n    dots: true,\n    autoplay: true,\n    autoplaySpeed: 2000,\n    responsive: [{\n      breakpoint: 1024,\n      settings: {\n        slidesToShow: 2,\n        slidesToScroll: 2,\n        infinite: true,\n        dots: true\n      }\n    }, {\n      breakpoint: 767,\n      settings: {\n        slidesToShow: 2,\n        slidesToScroll: 2\n      }\n    }, {\n      breakpoint: 480,\n      settings: {\n        slidesToShow: 1,\n        slidesToScroll: 1\n      }\n    }]\n  });\n}\n\n//# sourceURL=webpack://frontend-boilerplate/./app/assets/js/modules/_slider-meet.js?");
+
+/***/ }),
+
+/***/ "./app/assets/js/modules/_tabs.js":
+/*!****************************************!*\
+  !*** ./app/assets/js/modules/_tabs.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Tabs)\n/* harmony export */ });\nfunction Tabs() {\n  function openWorks(evt, worksName) {\n    var i, tabcontent, tablinks;\n    tabcontent = document.getElementsByClassName(\"tabcontent\");\n\n    for (i = 0; i < tabcontent.length; i++) {\n      tabcontent[i].style.display = \"none\";\n    }\n\n    tablinks = document.getElementsByClassName(\"tablinks\");\n\n    for (i = 0; i < tablinks.length; i++) {\n      tablinks[i].className = tablinks[i].className.replace(\" active\", \"\");\n    }\n\n    document.getElementById(worksName).style.display = \"block\";\n    evt.currentTarget.className += \" active\";\n  }\n\n  document.getElementById(\"defaultOpen\").click();\n}\n\n//# sourceURL=webpack://frontend-boilerplate/./app/assets/js/modules/_tabs.js?");
+
+/***/ }),
+
 /***/ "./app/assets/js/scripts.js":
 /*!**********************************!*\
   !*** ./app/assets/js/scripts.js ***!
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_sample__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/_sample */ \"./app/assets/js/modules/_sample.js\");\n/* harmony import */ var _modules_banner__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/_banner */ \"./app/assets/js/modules/_banner.js\");\n/* harmony import */ var _modules_scroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/_scroll */ \"./app/assets/js/modules/_scroll.js\");\n\n$(document).ready(function () {\n  var sample = new _modules_sample__WEBPACK_IMPORTED_MODULE_0__.default();\n});\n\n\n$(document).ready(function () {\n  (0,_modules_banner__WEBPACK_IMPORTED_MODULE_1__.default)();\n  (0,_modules_scroll__WEBPACK_IMPORTED_MODULE_2__.default)();\n});\n\n//# sourceURL=webpack://frontend-boilerplate/./app/assets/js/scripts.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_sample__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/_sample */ \"./app/assets/js/modules/_sample.js\");\n/* harmony import */ var _modules_banner__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/_banner */ \"./app/assets/js/modules/_banner.js\");\n/* harmony import */ var _modules_scroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/_scroll */ \"./app/assets/js/modules/_scroll.js\");\n/* harmony import */ var _modules_sidebar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/_sidebar */ \"./app/assets/js/modules/_sidebar.js\");\n/* harmony import */ var _modules_slider_features__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/_slider-features */ \"./app/assets/js/modules/_slider-features.js\");\n/* harmony import */ var _modules_slider_meet__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/_slider-meet */ \"./app/assets/js/modules/_slider-meet.js\");\n/* harmony import */ var _modules_tabs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/_tabs */ \"./app/assets/js/modules/_tabs.js\");\n\n$(document).ready(function () {\n  var sample = new _modules_sample__WEBPACK_IMPORTED_MODULE_0__.default();\n});\n\n\n\n\n\n\n$(document).ready(function () {\n  (0,_modules_banner__WEBPACK_IMPORTED_MODULE_1__.default)();\n  (0,_modules_scroll__WEBPACK_IMPORTED_MODULE_2__.default)();\n  (0,_modules_sidebar__WEBPACK_IMPORTED_MODULE_3__.default)();\n  (0,_modules_slider_features__WEBPACK_IMPORTED_MODULE_4__.default)();\n  (0,_modules_slider_meet__WEBPACK_IMPORTED_MODULE_5__.default)();\n  (0,_modules_tabs__WEBPACK_IMPORTED_MODULE_6__.default)();\n});\n\n//# sourceURL=webpack://frontend-boilerplate/./app/assets/js/scripts.js?");
 
 /***/ })
 

@@ -1,4 +1,5 @@
-function openWorks(evt, worksName) {
+export default function Tabs() {
+  function openWorks(evt, worksName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -12,3 +13,4 @@ function openWorks(evt, worksName) {
     evt.currentTarget.className += " active";
   }
   document.getElementById("defaultOpen").click();
+}

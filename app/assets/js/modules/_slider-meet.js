@@ -1,4 +1,5 @@
-$('.meet__slick').slick({
+export default function SilderMeet() {
+  $('.meet__slick').slick({
     slidesToShow: 4,
     slidesToScroll: 4,
     dots: true,
@@ -30,4 +31,5 @@ $('.meet__slick').slick({
         }
       ]
   });
+}
   

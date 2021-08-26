@@ -1,4 +1,5 @@
-$('.features__slick').slick({
+export default function SilderFeatures() {
+  $('.features__slick').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
@@ -30,4 +31,4 @@ $('.features__slick').slick({
         }
       ]
   });
-  
+}
